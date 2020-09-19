@@ -1,11 +1,9 @@
 SRC = unity/unity.c\
 src/function.c\
-#test/test_factorial.c\
 main.c
 
 INC = -Iunity\
--Iinc\
-#-Itest
+-Iinc
 
 PROJECT_NAME = FUNCTION.out
 # Output directory
