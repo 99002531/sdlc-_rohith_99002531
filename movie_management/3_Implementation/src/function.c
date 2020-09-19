@@ -9,19 +9,19 @@ void insert_details()
 	struct book b;
 	printf("Enter imdb rating :- ");
 
-	__fpurge(stdin);
+	//__fpurge(stdin);
 	scanf("%s",b.imdb);
 	printf("Enter movie or series name :- ");
 
-	__fpurge(stdin);
+	//__fpurge(stdin);
 	scanf("%s",b.name);
 	printf("Enter Release year:- ");
 
-	__fpurge(stdin);
+	//__fpurge(stdin);
 	scanf("%s",b.year);
 	printf(" Price:- ");
 
-	__fpurge(stdin);
+	//__fpurge(stdin);
 	scanf("%d",&b.cost);
 
 //	__fpurge(stdin);
