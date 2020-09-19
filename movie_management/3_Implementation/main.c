@@ -1,5 +1,5 @@
 #include "sdlc.h"
-{
+int main{
 	int ch;
 
  	do{
