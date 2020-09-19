@@ -1,6 +1,4 @@
-SRC = unity/unity.c\
-src/function.c\
-test/test_function.c\
+SRC = src/function.c\
 main.c
 
 INC = -Iunity\
