@@ -2,7 +2,7 @@
 #include "sdlc.h"
 	
 
-void insert_details()
+int insert_details()
 {
 
 	FILE *fp;
@@ -30,6 +30,7 @@ void insert_details()
 	if(fp == NULL)
 	{
 		printf("FIle not Found");
+		return(-1);
 	}
 	else
 	{
@@ -38,6 +39,7 @@ void insert_details()
 	}
 		printf("\n");
 	fclose(fp);
+	return 0;
 }
 void find() //find details
 {
@@ -76,7 +78,7 @@ void find() //find details
 
 	fclose(fp);
 }
-void viewAll()
+int viewAll()
 {
 	char ch;
 	FILE *fp;
@@ -85,6 +87,7 @@ void viewAll()
 	if(fp == NULL)
 	{
 		printf("file does not found !");
+		return -1;
 		exit(1);
 
 	}
@@ -97,9 +100,10 @@ void viewAll()
 
 	}
 	fclose(fp);
+	return 0;
 }
 
-void subscriptions()
+int subscriptions()
 {
  struct book b;
 	FILE *fp;
@@ -119,6 +123,7 @@ void subscriptions()
 	if(fp == NULL)
 	{
 		printf("file does not found !");
+		return -1;
 		exit(1);
 
 	}
@@ -203,10 +208,11 @@ void subscriptions()
 		printf("\n");
 	fclose(ufp);
 	fclose(fp);
+	return 0;
 
 }
 
-void old_record()
+int old_record()
 {
 	char ch;
 	FILE *fp;
@@ -217,6 +223,7 @@ void old_record()
 	if(fp == NULL)
 	{
 		printf("file does not found !");
+		return -1;
 		exit(1);
 
 	}
@@ -229,6 +236,7 @@ void old_record()
 
 	}
 	fclose(fp);
+	return 1;
 
 
 }
