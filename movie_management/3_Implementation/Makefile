@@ -1,3 +1,4 @@
+PROJECT_NAME = FUNCTION
 SRC =unity/unity.c\
 src/function.c\
 main.c
@@ -11,7 +12,7 @@ INC = -Iunity\
 -Iinc\
 -Itest
 
-PROJECT_NAME = FUNCTION.out
+
 # Output directory
 BUILD = build
 $(PROJECT_NAME): $(SRC)
