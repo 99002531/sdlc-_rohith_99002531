@@ -1,9 +1,7 @@
 SRC = src/function.c\
 main.c
 
-INC = -Iunity\
--Iinc\
--Itest
+INC = -Iinc
 
 PROJECT_NAME = movie_management.out
 BUILD = build
