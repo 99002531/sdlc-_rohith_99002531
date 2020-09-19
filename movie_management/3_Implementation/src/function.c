@@ -91,7 +91,7 @@ void viewAll()
 	else
 	{
 		system("clear");
-		__fpurge(stdin);
+		//__fpurge(stdin);
 		while( ( ch =fgetc(fp) ) != EOF )
       		printf("%c",ch);
 
@@ -125,7 +125,7 @@ void subscriptions()
 	else
 	{
 		//system("cls");
-		__fpurge(stdin);
+		//__fpurge(stdin);
 		while( ( ch = fgetc(fp) ) != EOF )
       		printf("%c",ch);
 
@@ -136,7 +136,7 @@ void subscriptions()
 	printf("\n For taking subscriptions Choose Movie or series(Enter Movie name)\n");
 	printf("\n Enter movie name :");
 
-	__fpurge(stdin);
+	//__fpurge(stdin);
 	scanf("%s",movie_name);
 	//system("clear");
 	fp = fopen("data.txt","r");
@@ -148,7 +148,7 @@ void subscriptions()
 	}
 	else
 	{
-		__fpurge(stdin);
+		//__fpurge(stdin);
 		while(getc(fp) != EOF)
 		{
 		//	fscanf(fp,"%s %s %s %d",b.imdb,b.name,b.year,&b.cost);
@@ -167,15 +167,15 @@ void subscriptions()
 	printf("\n* Fill Details  *");
 	printf("\n your name :");
 
-	__fpurge(stdin);
+	//__fpurge(stdin);
 	scanf("%s",name);
 	printf("\n mobile number :");
 
-	__fpurge(stdin);
+	//__fpurge(stdin);
 	scanf("%s",mobile);
 	printf("\n Total number of subscriptions :");
 
-	__fpurge(stdin);
+	//__fpurge(stdin);
 	scanf("%d",&total_subcriptions);
 
 
