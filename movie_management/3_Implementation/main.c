@@ -19,7 +19,7 @@ int main(){
 
    	printf("\nEnter your Choice ::");
 
-		__fpurge(stdin);
+		//__fpurge(stdin);
    	scanf("%d",&ch);
 
    	switch (ch)
