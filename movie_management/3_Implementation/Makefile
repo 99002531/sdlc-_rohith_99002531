@@ -1,33 +1,21 @@
-PROJECT_NAME = FUNCTION
-SRC =unity/unity.c\
+SRC = unity/unity.c\
 src/function.c\
+test/test_function.c\
 main.c
-
-TEST_SRC = src/function.c\
-movie_mangement/test/test_function.c
-
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 INC = -Iunity\
 -Iinc\
 -Itest
 
+PROJECT_NAME = movie_management.out
 
-# Output directory
-BUILD = build
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
-all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
+
 run:$(PROJECT_NAME)
 	./${PROJECT_NAME}
 doc:
 	make -C documentation
-test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
-	./$(TEST_OUTPUT)
 
 clean:
 	rm -rf $(PROJECT_NAME) documentation/html
-$(BUILD):
-	mkdir build
