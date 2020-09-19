@@ -5,7 +5,7 @@ we can search any entry if found success
 
 here we do store various aspect of movie such as imdb rating, name, released year and price of movie
 
-if anyone wants to buy a movie it displays list of movies avialble 
+if anyone wants to buy a movie it displays list of movies available
 
 user select anyone of the movie
 
