@@ -3,7 +3,7 @@ src/function.c\
 main.c
 
 TEST_SRC = src/function.c\
-test/test_function.c
+movie_mangement/test/test_function.c
 
 INC = -Iunity\
 -Iinc\
