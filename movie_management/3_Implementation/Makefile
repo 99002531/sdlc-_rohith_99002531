@@ -5,6 +5,8 @@ main.c
 TEST_SRC = src/function.c\
 movie_mangement/test/test_function.c
 
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+
 INC = -Iunity\
 -Iinc\
 -Itest
