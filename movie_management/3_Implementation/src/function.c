@@ -41,7 +41,7 @@ int insert_details()
 	fclose(fp);
 	return 0;
 }
-void find() //find details
+int find() //find details
 {
 	struct book b;
 	FILE *fp;
@@ -54,6 +54,7 @@ void find() //find details
 	if(fp == NULL)
 	{
 		printf("file does not found !");
+		return -1;
 		exit(1);
 
 	}
@@ -77,6 +78,7 @@ void find() //find details
 	}
 
 	fclose(fp);
+	return 0;
 }
 int viewAll()
 {
