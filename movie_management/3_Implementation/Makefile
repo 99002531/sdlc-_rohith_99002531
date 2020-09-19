@@ -18,6 +18,9 @@ run:$(PROJECT_NAME)
 	./${PROJECT_NAME}
 doc:
 	make -C documentation
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit
+	./$(TEST_OUTPUT)
 
 clean:
 	rm -rf $(PROJECT_NAME) documentation/html
