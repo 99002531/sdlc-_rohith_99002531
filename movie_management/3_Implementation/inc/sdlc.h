@@ -13,9 +13,9 @@ struct book
 }b;
 
 
-void insert_details();//for inserting movie details
-void viewAll(); // for view all data
-void find(); // for finding data
-void subscriptions();  //for geting subscriptions
-void old_record(); //for view old recorrds of users,booked tickets
+int insert_details();//for inserting movie details
+int viewAll(); // for view all data
+int find(); // for finding data
+int subscriptions();  //for geting subscriptions
+int old_record(); //for view old recorrds of users,booked tickets
 
