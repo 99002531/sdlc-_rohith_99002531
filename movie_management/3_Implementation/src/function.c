@@ -1,7 +1,7 @@
 #include "sdlc.h"
 
 
-void insert_details(char imdb[],char name[],char year[],int cost)
+int insert_details(char imdb[],char name[],char year[],int cost)
 {
 	//struct mystruct b;
 	FILE *fp;
@@ -24,6 +24,7 @@ void insert_details(char imdb[],char name[],char year[],int cost)
 	if(fp == NULL)
 	{
 		printf("FIle not Found");
+		return -1;
 	}
 	else
 	{
@@ -33,8 +34,9 @@ void insert_details(char imdb[],char name[],char year[],int cost)
 	}
 		printf("\n");
 	fclose(fp);
+	return 0;
 }
-void find(char find[]) //find details
+int find(char find[]) //find details
 {
 	FILE *fp;
 
@@ -46,6 +48,7 @@ void find(char find[]) //find details
 	if(fp == NULL)
 	{
 		printf("file does not found !");
+		return -1;
 		exit(1);
 
 	}
@@ -69,8 +72,9 @@ void find(char find[]) //find details
 	}
 
 	fclose(fp);
+	return 0;
 }
-void viewAll()
+int viewAll()
 {
 	char ch;
 	FILE *fp;
@@ -79,6 +83,7 @@ void viewAll()
 	if(fp == NULL)
 	{
 		printf("file does not found !");
+		return -1;
 		exit(1);
 
 	}
@@ -91,9 +96,10 @@ void viewAll()
 
 	}
 	fclose(fp);
+	return 0;
 }
 
-void subscriptions(char movie_name[],char person_name[],char mobile[],int total_subcriptions)
+int subscriptions(char movie_name[],char person_name[],char mobile[],int total_subcriptions)
 {
 	struct b;
 	//strcpy(b.movie_name,movie_name);
@@ -112,6 +118,7 @@ void subscriptions(char movie_name[],char person_name[],char mobile[],int total_
 	if(fp == NULL)
 	{
 		printf("file does not found !");
+		return -1;
 		exit(1);
 
 	}
@@ -198,10 +205,10 @@ void subscriptions(char movie_name[],char person_name[],char mobile[],int total_
 		printf("\n");
 	fclose(ufp);
 	fclose(fp);
-
+	return 0;
 }
 
-void old_record()
+int old_record()
 {
 	char ch;
 	FILE *fp;
@@ -212,6 +219,7 @@ void old_record()
 	if(fp == NULL)
 	{
 		printf("file does not found !");
+		return -1;
 		exit(1);
 
 	}
@@ -224,6 +232,7 @@ void old_record()
 
 	}
 	fclose(fp);
+	return 0;
 
 
 }
