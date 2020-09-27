@@ -1,53 +1,42 @@
 #include "unity.h"
-#include "sdlc.h"
-/* Required by the unity test framework */
-void setUp(){}
-/* Required by the unity test framework */
-void tearDown(){}
+#include "canteen.h"
 
-void test_insert_details(void)
-{
-  TEST_ASSERT_EQUAL(0,insert_details("8.5","go","2016",200);   //success
+//Required by the test unity framework
+void setUp() {}
 
-}
-void test_find(void)
+//Required by the unity framework
+void tearDown() {}
+
+void testing_insert(void)
 {
   TEST_ASSERT_EQUAL(0,find("Avengers"));   //success
+}
+void testing_find(void)
+{
+     TEST_ASSERT_EQUAL(0,find("Avengers"));   //success
+}
+void testing_viewall(void)
+{
+   TEST_ASSERT_EQUAL(0,viewAll()); //sucees 
+}
+void testing_subscriptions(void)
+{
+    TEST_ASSERT_EQUAL(0,subscriptions("Avengers","ram","362645959",2));
 
 }
-void test_viewAll(void)
+void testing_old_record(void)
 {
-  TEST_ASSERT_EQUAL(0,viewAll()); //sucees
-
+   TEST_ASSERT_EQUAL(0,old_record());
 }
 
-void test_subscriptions(void)
+int main(void)
 {
-  TEST_ASSERT_EQUAL(0,subscriptions("Avengers","ram","362645959",2));
-
-}
-
-void test_old_record(void)
-{
-  TEST_ASSERT_EQUAL(0,old_record());
-
-}
-
-
-int test_main(void)
-{
-/* Initiate the Unity Test Framework */
-  UNITY_BEGIN();
-
-/* Run Test functions */
-  RUN_TEST(test_insert_details);
-  RUN_TEST(test_find);
-   RUN_TEST(test_viewAll);
-  RUN_TEST(test_subscriptions);
-   RUN_TEST(test_old_record);
-
-
-
-  /* Close the Unity Test Framework */
-  return UNITY_END();
+    //Initiating the unity framework
+    UNITY_BEGIN();
+    RUN_TEST(testing_insert);
+    RUN_TEST(testing_find);
+    RUN_TEST(testing_viewall);
+    RUN_TEST(testing_subscriptions);
+    RUN_TEST(testing_old_record);
+    return UNITY_END();
 }
