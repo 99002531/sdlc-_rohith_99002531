@@ -5,3 +5,5 @@
 ![C/C++ CI](https://github.com/99002531/sdlc-_rohith_99002531/workflows/C/C++%20CI/badge.svg)
 
 ![cppcheck-action](https://github.com/99002531/sdlc-_rohith_99002531/workflows/cppcheck-action/badge.svg)
+
+![Unit testing](https://github.com/99002531/sdlc-_rohith_99002531/workflows/Unit%20testing/badge.svg)
