@@ -1,5 +1,5 @@
-#include "sdlc.h"
-int main(){
+int main()
+{
 	int ch;
 
  	do{
@@ -19,13 +19,13 @@ int main(){
 
    	printf("\nEnter your Choice ::");
 
-		//__fpurge(stdin);
+	//	__fpurge(stdin);
    	scanf("%d",&ch);
 
    	switch (ch)
    	{
     		case 1 :
-    		insert_details();
+    		insert_details("8.5","go","2016",200);
    	   	break;
 
 		    case 2:
@@ -33,11 +33,11 @@ int main(){
    		  break;
 
 		    case 3:
-    		find();
+    		find("Avengers");
    		  break;
 
 			  case 4:
-				subscriptions();
+				subscriptions("Avengers","ram","362645959",2);
 				break;
 
 				case 5:
@@ -56,3 +56,4 @@ int main(){
 
 return 0;
 }
+
