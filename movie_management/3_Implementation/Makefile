@@ -1,24 +1,27 @@
-SRC = src/function.c\
-main.c
+  
+SRC = unity/unity.c\
+src/function.c\
+test/test_function.c
 
-INC = -Iinc
+INC = -Iunity\
+-Iinc\
+-Itest
 
-PROJECT_NAME = movie_management.out
+PROJECT_NAME = FUNCTION.out
+
+# Output directory
 BUILD = build
 
 $(PROJECT_NAME): $(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
-	
+
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
 
 run:$(PROJECT_NAME)
 	./${PROJECT_NAME}
-doc:
-	make -C documentation
 
 clean:
-	rm -rf $(PROJECT_NAME) documentation/html
-
+	rm -rf $(PROJECT_NAME)
 $(BUILD):
 	mkdir build
