@@ -15,9 +15,9 @@ struct mystruct
 
 
 
-void insert_details(char imdb[],char name[],char year[],int cost) ;//for inserting movie details
-void viewAll(); // for view all data
-void find(char find[]); // for finding data
-void subscriptions(char movie_name[],char person_name[],char mobile[],int total_subcriptions); //for geting subscriptions
-void old_record(); //for view old records
+int insert_details(char imdb[],char name[],char year[],int cost) ;//for inserting movie details
+int viewAll(); // for view all data
+int find(char find[]); // for finding data
+int subscriptions(char movie_name[],char person_name[],char mobile[],int total_subcriptions); //for geting subscriptions
+int old_record(); //for view old records
 
